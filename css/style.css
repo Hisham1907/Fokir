@@ -1,0 +1,493 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.clr{
+    clear: both;
+}
+/* <Home> */
+.home{
+    background-image: url('../images/slider/slider-01.jpg');
+    height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+}
+.nav-logo{
+    width: 20%;
+    float: left;
+    padding-top: 15px;
+}
+/* .nav-logo  {
+    list-style: none;
+    
+} */
+.nav-logo a{
+text-decoration: none;
+}
+.nav-logo a h3{
+font-size: 20px;
+color:#FF305B;
+}
+.nav-links{
+    float: right;
+  
+}
+.nav-links ul li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+    
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links ul li a:hover{
+    color: #FF305B;
+}
+.nav-links ul li a span{
+    color:#FF305B; 
+}
+.home-cap{
+    color: white;
+    text-align: center;
+    padding-top: 240px;
+    /* z-index:2; */
+}
+.home-cap h3 {
+    padding-bottom: 15px;
+    font-size: 24px; 
+}
+.home-cap h1{
+    color: #FF305B;
+    font-size:65px;
+    font-weight: bold;
+
+}
+.home-cap p{
+    font-size: 24px;
+    
+   
+}
+.home-cap p::after{
+    content:"" ;
+    animation: 4s typing infinite;
+}
+ @keyframes typing {
+    0%{
+        content: "W|";
+    }
+    10%{
+        content: "We";
+    }
+    20%{
+        content: "Web|";
+    }
+    30%{
+        content: "Web D";
+    }
+    40%{
+        content: "Web De|";
+    }
+    50%{
+        content: "Web Des";
+    }
+    60%{
+        content: "Web Desi|";
+    }
+    70%{
+        content: "Web Desig";
+    }
+    80%{
+        content: "Web Design|";
+    }
+    90%{
+        content: "Web Designe";
+    }
+    100%{
+        content: "Web Designer|";
+    }
+ }
+
+
+
+.layer{
+    background-color: rgba(0, 0, 0,0.8);
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /* z-index: 1; */
+   
+}
+/* </Home> */
+
+/* <About> */
+.about{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.about-img{
+    width: 40%;
+    float: left;
+    padding-left: 50px;
+   
+}
+.about-cap{
+    width: 50%;
+    float: left;
+}
+.about-img .box{
+    border: 10px solid gray;
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+
+}
+.about-cap h2{
+   color: #333333; 
+   font-size: 34px;
+}
+.about-cap h2 span{
+color: #FF305B;
+
+}
+.about-cap p{
+    color: #555555;
+    margin: 20px 0px;
+    line-height: 26px;
+    
+    
+}
+
+.box .box-img img{
+    border-radius: 5px;
+    width: 110%;
+}
+.box .box-img{
+    padding-top:15px ;
+    padding-left: 15px;
+    position: relative;
+    transition: 4s 4s all;
+}
+.box-img .box-layer{
+    background-color: rgba(0, 0, 0,0.6);
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    color: white;
+}
+
+.box-img:hover .box-layer{
+    opacity: 1;
+}
+.about-cap .list-left{
+    float: left;
+    width: 50%;
+    
+}
+.about-cap .list-right{
+    float: left;
+    width: 50%;
+    
+}
+.about-cap li{
+list-style: none;}
+
+.about-data li{
+    margin-bottom: 15px;
+    color: #555555;
+}
+.about-data li a{
+    text-decoration: none;
+    color: #555555;
+}
+.about-cap li span{
+    font-weight: bold;
+    color: #333333;
+    }
+.about .btn{
+    background-color: #FF305B;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* </About> */
+
+/* <Services> */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.services{
+padding: 50px 0px;
+margin-top: 50px;
+background-color: #F1F1F1;
+}
+.services .services-title{
+    text-align: center;
+    padding:50px ;
+}
+.services .services-title h2{
+    font-size: 38px;
+    position: relative;
+}
+.services .services-title h2::after{
+    content: '';
+    width: 150px;
+    height: 2px;
+    background-color: #FF305B;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: r;
+}
+
+.our-services{
+    padding:50px ;
+}
+.our-services .item{
+    width: 25%;
+    float: left;
+    text-align: center;
+    transition: 1s all;
+}
+.our-services .item h3{
+margin: 15px;
+}
+.our-services .item p {
+    padding: 20px;
+}
+.our-services .item:hover{
+    background-color: white;
+}
+/* </Services> */
+
+/* <Portofolio> */
+.Portfolio-title h2{
+    text-align: center;
+    margin: 50px;
+    font-size: 38px;
+}
+
+.Portfolio{
+    text-align: center;
+}
+.Portfolio-list{
+    text-align: center;
+    margin: auto;
+
+}
+.Portfolio-list ul{
+    width: fit-content;
+    margin: auto;
+}
+.Portfolio-list ul li{
+    list-style: none;
+    float: left;
+    margin: 15px;
+    color: #333333;
+    text-transform: uppercase;
+
+}
+.Portfolio-list ul li span{
+    color: #FF305B;
+}
+.Portfolio-products .product-space{
+    padding:15px;
+    width: 33.3333%;
+    float: left;
+ }
+ .Portfolio-products .product-space .products{
+    position: relative;
+ }
+ 
+
+ .Portfolio-products .products img{
+    width: 100%;
+ }
+ .Portfolio-products .products-layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0,0.5);
+    opacity: 0;
+    transition: 1s all;
+ }
+
+ .Portfolio-products .products:hover .products-layer{
+opacity: 1;
+ }
+
+
+ /* .Portfolio-products .products img:hover{
+
+    background-color: rgba(0, 0, 0,0.7);
+ } */
+
+
+ /* </Portfolio> */
+
+ /* <Testimonial> */
+ .Testimonial{
+background-color: #F1F1F1;
+padding: 50px;
+ }
+ .Testimonial .icon{
+width: 25%;
+float: left;
+text-align: center;
+ }
+ .Testimonial .icon h2{
+    margin: 30px;
+ }
+ .Testimonial .icon h5{
+    margin: 30px;
+ }
+
+ /* </Testimonial> */
+
+ /* <Blog> */
+ .blog{
+    background-color: #F1F1F1;
+    padding: 50px;
+ }
+ .blog .blog-title{
+    text-align: center;
+ }
+ .blog-posts .post{
+    width:33.3333% ;
+    float: left;
+    padding: 15px;
+ }
+ .blog-posts .post img{
+    width: 100%;
+ }
+ .blog-posts .post iframe{
+    padding-top: 45px;
+ }
+ .blog-posts p{
+    margin: 20px 0px;
+ }
+ .blog-posts a{
+    text-decoration: none;
+    
+ }
+ .blog-posts h3{
+font-size:25px;
+color: #333333;
+ }
+ .blog-posts .post button{
+   background-color:white;
+    border-style: none;
+    color: #333333;
+    font-size: 20px;
+ }
+ .blog .post-co{
+    background-color: white;
+ }
+ .blog .post-data{
+    padding: 20px;
+ }
+
+ .blog .post-data a h3:hover{
+    color: #FF305B;
+ }
+ .blog .post-data button:hover{
+    color: #FF305B;
+
+ }
+ /* </Blog> */
+
+/* <Contact> */
+.contact{
+    padding-bottom: 50px;
+}
+ .contact-title{
+    padding: 50px;
+    text-align: center;
+ }
+ .form-size{
+    width: 50%;
+    margin: auto;
+    
+ }
+.form-size .top-content{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0px;
+}
+.form-size .bottom-content{
+    padding: 10px;
+    text-align: center;
+}
+.form-size .bottom-content textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: 30px 15px;
+    border: #555555 1px solid;
+    margin: 10px 0px;
+}
+.form-size .btn{
+    background-color: #FF305B;
+    color: white;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border-style: none;
+    margin-left: 10px;
+
+}
+
+.form-size input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: #555555 1px solid;
+    
+}
+.form-size .btn:hover{
+    background-color: #EC2403;
+}
+
+/* </Contact> */
+
+/*   <Footer>  */
+
+.footer{
+    text-align: center;
+    padding: 50px;
+    background-color: #333333;
+    color: white;
+}
+
+.footer span{
+    color: #FF305B;
+}
+.footer .icons i{
+    margin: 5px;
+    font-size: 1.5rem;
+}
+.footer .icons i:hover{
+  color: #FF305B;
+}
+/* </Footer> */
